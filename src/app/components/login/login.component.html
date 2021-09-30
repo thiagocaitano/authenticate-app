@@ -1,0 +1,23 @@
+
+<form [formGroup]="formulario">
+    <p-card >
+    <img src="assets/logo_meta.png" class="login-img"> <br/>
+    <div class="p-field p-grid">
+        <label for="usuario" class="p-col-fixed">Usuário</label>
+        <div class="p-col">
+            <input formControlName="usuario" id="usuario" type="text" pInputText> 
+        </div>
+    </div>
+    <div class="p-field p-grid">
+        <label for="senha" class="p-col-fixed" >Senha</label>
+        <div class="p-col">
+            <input formControlName="senha" id="senha" type="text" pInputText> 
+        </div>
+    </div>
+    
+    <ng-template pTemplate="footer">
+        <button pButton type="button" class="p-button-raised" label="Entrar" (click)="login()" ></button>
+        
+    </ng-template>
+</p-card>
+</form>
